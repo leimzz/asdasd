@@ -1,0 +1,113 @@
+/* Global Styles */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/* Body Styles */
+body {
+    background-image: url('bg.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Container Styles */
+.container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    z-index: 1;
+    position: relative;
+    perspective: 1000px; /* Add perspective for 3D effect */
+    
+}
+
+/* Card Styles */
+.card {
+    background: white;
+    width: 350px;
+    height: 200px; /* Set a fixed height for the landscape container */
+    margin: 10px;
+    border-radius: 15px;
+    box-shadow: 5px 5px 20px black;
+    transform-style: preserve-3d; /* Enable 3D transformations */
+    transition: transform 0.5s ease; /* Add smooth transition for transform */
+}
+
+/* Card Image Styles */
+.card-image {
+    height: 100%;
+    margin-bottom: 15px;
+    background-size: cover;
+    border-radius: 15px 15px 0 0;
+}
+
+/* Heading Styles */
+.card h2 {
+    padding: 10px;
+    text-align: center;
+    font-family: "Rye";
+}
+
+/* Text Description Styles */
+.card-text {
+    display: none;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.card p {
+    padding: 10px;
+    text-align: justify;
+    font-family: "Londrina Solid";
+}
+
+/* Link Styles */
+.card a {
+    background-color: black;
+    color: white;
+    padding: 15px 20px;
+    display: block;
+    text-align: center;
+    /* margin: 20px 50px; Remove this margin */
+    text-decoration: none;
+}
+/* Hover Styles */
+.card:hover {
+    background-color: rgb(62, 62, 62);
+    color: white;
+    cursor: pointer;
+    transform: scale(1.05); /* Remove rotateY(180deg) */
+}
+
+.card:hover .card-text {
+    display: block;
+    opacity: 1;
+}
+
+/* Header Styles */
+header {
+    text-align: center;
+    margin: 20px 0;
+}
+
+/* Main Title Styles */
+.main-title {
+    font-family: "Rye";
+    font-size: 3.5em;
+    color: black;
+    text-shadow: 2px 2px 16px red;
+}
+.card-1{
+    background-image: url('img1.png');
+}
+.card-2{
+    background-image: url('img2.png');
+}
+.card-3{
+    background-image: url('https://unicorncards.co.uk/images/thumbs/0071974_600.webp');
+}
